@@ -1,62 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WeatherSphere</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
+    <!-- SEO Meta Tags -->
+    <title>Weather App - Accurate Local Weather Forecasts</title>
+    <meta
+      name="description"
+      content="Get accurate local weather forecasts, real-time updates, and detailed weather reports for your city. Check temperature, humidity, and more with our Weather App."
+    />
+    <meta
+      name="keywords"
+      content="weather app, local weather forecast, real-time weather, temperature, humidity, weather reports, daily weather, city weather"
+    />
+    <meta name="author" content="Weather App Team" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <div class="container">
-        <header>
-            <h1>WeatherSphere</h1>
-            <div class="search-container">
-                <input type="text" id="city-input" placeholder="Enter city name..." list="city-suggestions" autocomplete="off">
-                <datalist id="city-suggestions"></datalist>
-                <button id="search-btn"><i class="fas fa-search"></i></button>
-            </div>
-        </header>
+      <header>
+        <h1>WeatherSphere</h1>
+        <div class="search-container">
+          <input
+            type="text"
+            id="city-input"
+            placeholder="Enter city name..."
+            list="city-suggestions"
+            autocomplete="off"
+          />
+          <datalist id="city-suggestions"></datalist>
+          <button id="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+      </header>
 
-        <main>
-            <div class="weather-card">
-                <div class="weather-info">
-                    <div class="location">
-                        <h2 id="city-name">--</h2>
-                        <p id="date-time">--</p>
-                    </div>
-                    <div class="temperature">
-                        <div class="temp-value">
-                            <span id="temp">--</span>
-                            <span class="unit">°C</span>
-                        </div>
-                        <div class="weather-icon" id="weather-icon">
-                            <i class="fas fa-question"></i>
-                        </div>
-                    </div>
-                    <div class="details">
-                        <div class="detail-item">
-                            <i class="fas fa-tint"></i>
-                            <span id="humidity">--%</span>
-                        </div>
-                        <div class="detail-item">
-                            <i class="fas fa-wind"></i>
-                            <span id="wind">-- km/h</span>
-                        </div>
-                        <div class="detail-item">
-                            <i class="fas fa-cloud"></i>
-                            <span id="description">--</span>
-                        </div>
-                    </div>
-                </div>
+      <main>
+        <div class="weather-card">
+          <div class="weather-info">
+            <div class="location">
+              <h2 id="city-name">--</h2>
+              <p id="date-time">--</p>
             </div>
-        </main>
+            <div class="temperature">
+              <div class="temp-value">
+                <span id="temp">--</span>
+                <span class="unit">°C</span>
+              </div>
+              <div class="weather-icon" id="weather-icon">
+                <i class="fas fa-question"></i>
+              </div>
+            </div>
+            <div class="details">
+              <div class="detail-item">
+                <i class="fas fa-tint"></i>
+                <span id="humidity">--%</span>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-wind"></i>
+                <span id="wind">-- km/h</span>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-cloud"></i>
+                <span id="description">--</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
 
-        <footer>
-            <p>Powered by OpenWeatherMap</p>
-        </footer>
+      <footer>
+        <p>Powered by OpenWeatherMap</p>
+      </footer>
     </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
